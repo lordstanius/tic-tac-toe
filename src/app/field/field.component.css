@@ -1,0 +1,39 @@
+.element {
+  display: flex;
+  font-size: 10vw !important;
+  text-shadow: -1px -1px 0px #b2a7e477, 1px 1px 0px #625db8b9;
+  border-right: 2px solid #484848;
+  border-bottom: 2px solid #484848;
+  margin: 12px;
+  color: #8080ff;
+  background-color: #8080ff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  width: 11vw;
+  min-width: 130px;
+  height: 11vw;
+  min-height: 130px;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  cursor: default;
+}
+
+.hover {
+  background-color: #8888ff;
+  border-right: 2px solid #383535ef;
+  border-bottom: 2px solid #383535ef;
+  cursor: pointer;
+}
+
+.locked {
+  background-color: #2b2b64;
+}
+
+.x {
+  color: #00ccff;
+}
+
+.o {
+  color: #ff80c0;
+}
