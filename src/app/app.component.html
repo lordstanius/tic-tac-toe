@@ -7,14 +7,11 @@
     <div id="main_settings">
       <div class="column">
         <mat-form-field>
-          <input matInput type="text"
-            placeholder="Player 1"
-            [(ngModel)]="game.settings.player1Name"
-            [disabled]="game.settings.computerPlayer === 1"/>
+          <input matInput type="text" placeholder="Player 1" [(ngModel)]="game.settings.player1Name"
+            [disabled]="game.settings.computerPlayer === 1" />
         </mat-form-field>
         <mat-form-field>
-          <mat-select class="material-icons" placeholder="Glyph"
-            [(ngModel)]="game.player1Glyph"
+          <mat-select class="material-icons" placeholder="Glyph" [(ngModel)]="game.player1Glyph"
             [disabled]="game.settings.computerPlayer === 1">
             <mat-option class="option" *ngFor="let glyph of game.settings.glyphs" [value]="glyph">
               <i class="material-icons md-48 x">{{glyph}}</i>
@@ -25,14 +22,11 @@
       <h2 id="vs">vs</h2>
       <div class="column">
         <mat-form-field>
-          <input matInput type="text"
-            placeholder="Player 2"
-            [(ngModel)]="game.settings.player2Name"
-            [disabled]="game.settings.computerPlayer === 2"/>
+          <input matInput type="text" placeholder="Player 2" [(ngModel)]="game.settings.player2Name"
+            [disabled]="game.settings.computerPlayer === 2" />
         </mat-form-field>
         <mat-form-field>
-          <mat-select class="material-icons" placeholder="Glyph"
-            [(ngModel)]="game.player2Glyph"
+          <mat-select class="material-icons" placeholder="Glyph" [(ngModel)]="game.player2Glyph"
             [disabled]="game.settings.computerPlayer === 2">
             <mat-option class="option" *ngFor="let glyph of game.settings.glyphs" [value]="glyph">
               <i class="material-icons md-48 o">{{glyph}}</i>
@@ -52,5 +46,13 @@
       </button>
     </div>
   </div>
-  <div>Icons made by <a href="https://www.freepik.com/?__hstc=57440181.a97d13df07217843f6ce808032d03eac.1559394606387.1559394606387.1559394606387.1&__hssc=57440181.2.1559394606388&__hsfp=3872456946" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  <div style="margin: 5px;font-size: 10px">
+    <div>
+      Icons made by <a
+        href="https://www.freepik.com/?__hstc=57440181.a97d13df07217843f6ce808032d03eac.1559394606387.1559394606387.1559394606387.1&__hssc=57440181.2.1559394606388&__hsfp=3872456946"
+        title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is
+      licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+        target="_blank">CC 3.0 BY</a>
+    </div>
+  </div>
 </section>
